@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-Color: rgb(29, 149, 29);
+  --bg: #f1f1f1;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  background: var(--bg);
+}
+
+/* ERROR SMS IF WIDTH IS GREATER THAN 768px */
+.error-message {
+  display: none;
+}
+
+/* STYLE THE NAV BAR */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar .user-profile{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-bar .user-profile img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav-bar .notification{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-bar .notification span {
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+
+/* TRANSACTION HISTORY */
+.transaction {
+  background: var(--bg-Color);
+  padding: 10px;
+  margin-top: 2.3em;
+  width: 100%;
+  margin: 2.3em auto;
+  color: #fff;
+  border-radius: 10px;
+}
+.transact-history{
+  display: flex;
+  justify-content: space-between;
+  font-size: .8rem;
+}
+.transact-history div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.transact-history div p {
+  white-space: nowrap;
+}
+.transact-history i{
+  cursor: pointer;
+}
+
+/* Amount of Money inthe bank account */
+.amount{
+  margin-top: 1em;
+  line-height: 35px;
+}
+.amount h2 span{
+  font-size: 2rem;
+}
+.amount h2 i {
+  font-size: 1.5rem;
+}
+
+/* TRANSFER AND ADD MONEY */
+.perform-task{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+  /* text-align: center; */
+  margin: 1em auto;
+}
+
+.perform-task div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.perform-task i,
+.perform-task span{
+  background: #fff;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--bg-Color);
+  margin-bottom: .5em;
+}
+
+/* Airtime, Data, Betting e.t.c */
+.choices{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+  row-gap: 20px;
+  overflow-x: auto;
+  padding: 30px 5px 20px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.choices .icon-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon-container h3 {
+  font-size: .8rem;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+
+ .icon {
+  --bg-Color: rgba(60, 172, 60, 0.1);
+  background: var(--bg-Color);
+  padding: 25px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.icon-container span {
+  color: rgb(29, 149, 29);
+}
+
+ .airtime .icon span,
+ .Data .icon span {
+  background: rgb(29, 149, 29);
+  padding: 7px 3px;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 20px;
+} 
+
+.airtime p,
+.Data p{
+  position: absolute;
+  top: -16px;
+  right: -25px;
+  background: rgb(235, 66, 5);
+  padding: 3px;
+  border-radius: 10px 10px 10px 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* CASHBACK */
+.cashback {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+  position: relative;
+}
+
+.cashback .icon {
+  padding: 20px;
+  border: 1px solid rgb(29, 149, 29);
+}
+
+.cashback .icon span{
+  color: rgb(29, 149, 29);
+  font-size: 2rem;
+}
+
+.cashback .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cashback .fa-xmark{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #eee;
+  padding: 10px;
+  border-radius: 0 50% 0 50%;
+  cursor: pointer;
+}
+
+/* Footer Section */
+
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2em;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  color: grey;
+  background: #fff;
+}
+
+.footer-nav div{
+  cursor: pointer;
+}
+
+.footer-nav span {
+  font-size: 1.5rem;
+}
+
+.footer-nav .active {
+  color: rgb(29, 149, 29);
+}

@@ -126,6 +126,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
   row-gap: 20px;
+  column-gap: 10px;
   overflow-x: auto;
   padding: 30px 5px 20px;
   width: 100%;

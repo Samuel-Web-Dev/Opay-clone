@@ -17,6 +17,9 @@ body {
 }
 
 /* ERROR SMS IF WIDTH IS GREATER THAN 768px */
+.error-message {
+  display: none;
+}
 
 /* STYLE THE NAV BAR */
 .nav-bar {
